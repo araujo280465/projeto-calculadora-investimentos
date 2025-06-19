@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Investimentos</title>
+  </head>
+  <body class="h-[100dvh] grid grid-cols-3 grid-rows-2">
+    <aside
+      class="bg-emerald-300 row-span-2 flex flex-col justify-between py-5 px-2"
+    >
+      <h1 class="text-2xl font-bold px-6">Calculadora de Investimentos</h1>
+      <form class="w-full">
+        <div class="flex w-full flex-col px-6 my-2">
+          <label for="startingAmount" class="font-bold text-gray-700"
+            >Investimento Inicial</label
+          >
+          <div class="flex">
+            <input
+              type="text"
+              class="w-1/6 text-center rounded-l-lg"
+              value="R$"
+              disabled
+            />
+            <input
+              type="text"
+              class="w-5/6 rounded-r-lg px-2"
+              id="startingAmount"
+              placeholder="0.00"
+            />
+          </div>
+        </div>
+        <div class="flex w-full flex-col px-6 my-2">
+          <label for="additionalContribution" class="font-bold text-gray-700"
+            >Aporte Adicional</label
+          >
+          <div class="flex">
+            <input
+              type="text"
+              class="w-1/6 text-center rounded-l-lg"
+              value="R$"
+              disabled
+            />
+            <input
+              type="text"
+              class="w-5/6 rounded-r-lg px-2"
+              id="additionalContribution"
+              placeholder="0.00"
+            />
+          </div>
+        </div>
+        <div class="flex w-full flex-col px-6 my-2">
+          <label for="timeAmount" class="font-bold text-gray-700">Prazo</label>
+          <div class="flex">
+            <input
+              type="text"
+              class="w-2/3 rounded-l-lg px-2"
+              id="timeAmount"
+              placeholder="0"
+            />
+
+            <select
+              id="timeAmountPeriod"
+              class="w-1/3 rounded-r-lg border-l-2 border-emerald-600 text-center hover:bg-emerald-950 hover:text-slate-200"
+            >
+              >
+              <option value="monthly">Mensal</option>
+              <option value="anualy">Anual</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex w-full flex-col px-6 my-2">
+          <label for="returnRate" class="font-bold text-gray-700"
+            >Rentabilidade</label
+          >
+          <div class="flex">
+            <input
+              type="text"
+              class="w-1/6 text-center rounded-l-lg"
+              value="%"
+              disabled
+            />
+            <input
+              type="text"
+              class="w-1/2 px-2"
+              id="returnRate"
+              placeholder="0"
+            />
+
+            <select
+              id="evaluationPeriod"
+              class="w-1/3 rounded-r-lg border-l-2 border-emerald-600 text-center hover:bg-emerald-950 hover:text-slate-200"
+            >
+              >
+              <option value="monthly">Mensal</option>
+              <option value="anualy">Anual</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex w-full flex-col px-6 my-2">
+          <label for="taxRate" class="font-bold text-gray-700"
+            >Impostos sobre Lucro</label
+          >
+          <div class="flex">
+            <input
+              type="text"
+              class="w-1/6 text-center rounded-l-lg"
+              value="%"
+              disabled
+            />
+            <input
+              type="text"
+              class="w-5/6 rounded-r-lg px-2"
+              id="taxRate"
+              placeholder="0"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="flex h-12 px-6 my-8 w-full gap-2">
+        <button
+          id="calculate-results"
+          class="w-1/2 rounded-lg bg-emerald-950 text-slate-200 hover:bg-emerald-800"
+        >
+          Calcular
+        </button>
+        <button
+          class="w-1/2 rounded-lg border-2 border-solid hover:bg-emerald-500"
+        >
+          Limpar
+        </button>
+      </div>
+    </aside>
+
+    <main>
+      <p>resultados</p>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

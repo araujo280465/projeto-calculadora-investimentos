@@ -1,0 +1,59 @@
+🧾 Step 1: Create .gitignore
+Save this in the root of your project as .gitignore:
+
+add this to the file
+        # .gitignore
+        node_modules
+        dist
+        .env
+        .vscode
+        .DS_Store
+
+
+💻 Step 2: Initialize Git & Commit
+In your project folder terminal (VS Code or PowerShell):
+
+cd move to the directory you want to install
+
+run this in the terminal
+        git init
+        git add .
+        git commit -m "Initial commit: THE NAME OF YOUR REPOSITORY"
+
+        
+
+
+🐱 Step 3: Create Repo on GitHub
+
+Go to https://github.com/new
+
+Repository name: THE NAME OF YOUR Repository (or anything you want)
+
+Leave all options unchecked
+
+Click Create repository
+
+🔗 Step 4: Connect Local to GitHub
+
+GitHub will show you these commands — paste them into your terminal (replace <your-username>)
+replace <THE NAME OF YOUR REPOSITORY> with your repository name:
+
+git remote add origin https://github.com/<YOUR-USERNAME>/<THE NAME OF YOUR REPOSITORY>.git
+git branch -M main
+git push -u origin main
+
+
+✅ You're Done!
+Your project is now live on GitHub.
+
+🛠️ Everyday Workflow
+To save changes:
+
+git add .
+git commit -m "Describe what you changed"
+git push
+
+
+git remote add origin https://github.com/araujo280465/projeto-calculadora-investimentos.git
+git branch -M main
+git push -u origin main
