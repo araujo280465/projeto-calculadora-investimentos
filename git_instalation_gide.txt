@@ -20,8 +20,6 @@ run this in the terminal
         git add .
         git commit -m "Initial commit: THE NAME OF YOUR REPOSITORY"
 
-        
-
 
 🐱 Step 3: Create Repo on GitHub
 
@@ -39,6 +37,7 @@ GitHub will show you these commands — paste them into your terminal (replace <
 replace <THE NAME OF YOUR REPOSITORY> with your repository name:
 
 git remote add origin https://github.com/<YOUR-USERNAME>/<THE NAME OF YOUR REPOSITORY>.git
+git commit -m "Initial commit: "
 git branch -M main
 git push -u origin main
 
@@ -54,6 +53,3 @@ git commit -m "Describe what you changed"
 git push
 
 
-git remote add origin https://github.com/araujo280465/projeto-calculadora-investimentos.git
-git branch -M main
-git push -u origin main
