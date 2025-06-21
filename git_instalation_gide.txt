@@ -53,3 +53,59 @@ git commit -m "Describe what you changed"
 git push
 
 
+
+🔁 Create a New Branch
+Replace my-feature-branch with a descriptive name.
+
+git checkout -b feature-branch-teste
+This creates and switches to the new branch.
+
+
+🔁 Switch Between Branches
+
+git checkout main         # Go back to the main branch
+git checkout feature-branch-teste
+
+
+🚀 Push Branch to GitHub
+Once you've made changes and committed them:
+
+git push origin feature-branch-teste
+This will create the branch on GitHub too.
+
+🔄 Merge a Branch into Main
+First, switch to the main branch:
+
+git checkout main
+git pull origin main      # Make sure it's up to date
+git merge feature-branch-teste
+Then push the updated main:
+git push origin main
+
+🌐 2. Branching on GitHub Website
+📌 To create a branch:
+Go to your repo on GitHub.
+
+Click the branch selector dropdown (top-left, usually says main).
+
+Type a new branch name and press Enter to create it from main.
+
+🎯 Typical Workflow Example
+
+# Start from main
+git checkout main
+git pull origin main
+
+# Create a new branch
+git checkout -b fix/header-style
+
+# Make changes...
+
+git add .
+git commit -m "Fix header layout on mobile"
+git push origin fix/header-style
+
+
+
+
+
